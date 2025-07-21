@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoldNews</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__content">
+        <div class="logo">📰 <span>Mold</span>News</div>
+        <nav class="nav">
+          <a href="#">Головна</a>
+          <a href="#">Світ</a>
+          <a href="#">Політика</a>
+          <a href="#">Економіка</a>
+          <a href="#">Наука</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <h1 class="main__title">Пошук новин</h1>
+        <input
+          type="text"
+          placeholder="Введіть тему..."
+          class="news__input"
+          newsInp
+        />
+
+        <div class="sort">
+          <label for="sortBy">Сортувати:</label>
+          <select id="sortBy" class="sort__select" sortSel>
+            <option value="relevancy">Релевантність</option>
+            <option value="publishedAt">Дата</option>
+            <option value="popularity">Популярність</option>
+          </select>
+        </div>
+
+        <button class="search__btn" newsBtn>Показати новини</button>
+
+        <div class="news__container" newsBox>
+          <p class="news__placeholder">
+            🔍 Введіть запит для отримання результатів
+          </p>
+        </div>
+
+        <div class="pagination hidden" btnBox>
+          <button class="nav-btn" prevPage>⬅️ Назад</button>
+          <button class="page-btn" frPage>1</button>
+          <button class="page-btn" secPage>2</button>
+          <button class="page-btn" thirdPage>3</button>
+          <button class="page-btn" fourthPage>4</button>
+          <button class="page-btn" fifthPage>5</button>
+          <button class="nav-btn" nextPage>➡️ Далі</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 MoldNews — Всі права захищені.</p>
+        <p>Контакт: info@moldnews.md</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
